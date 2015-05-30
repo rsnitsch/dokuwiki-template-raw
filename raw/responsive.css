@@ -17,3 +17,19 @@
 		margin: auto !important;
 	}
 }
+
+/* The following styles are useful even on non-mobile devices... */
+
+/* Fix images on the image detail page breaking the viewport. */
+div.img_big {
+        max-width: 100%;
+}
+.img_detail {
+	height: auto;
+	max-width: 100%;
+}
+
+/* Fix header of image detail page breaking the viewport. */
+.h1_img_detail {
+	word-wrap: break-word;
+}

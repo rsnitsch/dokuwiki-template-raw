@@ -20,6 +20,7 @@ if (!defined('DOKU_INC')) die();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang']?>" lang="<?php echo $conf['lang']?>" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
   <title>
      <?php echo hsc(tpl_img_getTag('IPTC.Headline',$IMG))?>
     [<?php echo strip_tags($conf['title'])?>]
@@ -37,7 +38,7 @@ if (!defined('DOKU_INC')) die();
   <div class="page">
     <?php if($ERROR){ print $ERROR; }else{ ?>
 
-    <h1><?php echo hsc(tpl_img_getTag('IPTC.Headline',$IMG))?></h1>
+    <h1 class="h1_img_detail"><?php echo hsc(tpl_img_getTag('IPTC.Headline',$IMG))?></h1>
 
     <div class="img_big">
       <?php tpl_img(900,700) ?>
