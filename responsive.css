@@ -1,0 +1,19 @@
+/* Make layout more responsive on mobile devices... */
+@media (max-width: 800px) {
+	/* Fix appearance of table-of-contents. */
+	div.dokuwiki #dw__toc {
+		float: none;
+		font-size: 120%;
+		margin: auto;
+		width: auto;
+	}
+	/* Fix long URLs (links) breaking the viewport. */
+	a {
+		word-wrap: break-word;
+	}
+	/* Fix wide images breaking the viewport. */
+	img {
+		max-width: 100%;
+		margin: auto !important;
+	}
+}
